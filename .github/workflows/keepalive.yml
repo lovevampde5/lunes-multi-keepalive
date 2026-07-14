@@ -2,7 +2,6 @@ name: GitHub Actions Keep Alive (Bulletproof)
 
 on:
   schedule:
-    # 避开整点（00:00）的拥堵时段，改在凌晨 3:17 分触发，能大幅降低 GitHub 节点的延迟
     - cron: '0 12 * * 5'  # 每周五北京时间20
   workflow_dispatch: 
 
